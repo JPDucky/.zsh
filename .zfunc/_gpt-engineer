@@ -1,0 +1,7 @@
+#compdef gpt-engineer
+
+_gpt_engineer_completion() {
+  eval $(env _TYPER_COMPLETE_ARGS="${words[1,$CURRENT]}" _GPT_ENGINEER_COMPLETE=complete_zsh gpt-engineer)
+}
+
+compdef _gpt_engineer_completion gpt-engineer

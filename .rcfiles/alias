@@ -1,0 +1,21 @@
+# Put all alias files in here, they are then sourced by their respective (all) shells
+
+#test#
+alias honk="echo "honk""
+
+# alias for my grub annoyances #
+alias update-grub="grub2-mkconfig -o "$(readlink -e /etc/grub2-efi.cfg)""
+
+# alias for surface power control #
+alias perf1="sudo surface profile set low-power"
+alias perf2="sudo surface profile set balanced"
+alias perf3="sudo surface profile set balanced-performance"
+alias perf4="sudo surface profile set performance"
+
+# alias for a better copy #
+alias cpprog="rsync -ah --progress"
+alias savesesh="qdbus org.kde.ksmserver /KSMServer org.kde.KSMServerInterface.saveCurrentSession"
+alias listsesh="qdbus org.kde.ksmserver /KSMServer org.kde.KSMServerInterface.sessionList"
+alias saveseshas="qdbus org.kde.ksmserver /KSMServer org.kde.KSMServerInterface.saveCurrentSessionAs"
+
+alias vim="nvim"

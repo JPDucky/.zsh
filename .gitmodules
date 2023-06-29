@@ -1,0 +1,12 @@
+[submodule ".oh-my-zsh"]
+	path = .oh-my-zsh
+	url = https://github.com/oh-my-zsh/oh-my-zsh.git
+[submodule "oh-my-zsh-powerline-theme"]
+	path = oh-my-zsh-powerline-theme
+	url = https://github.com/jeremyFreeAgent/oh-my-zsh-powerline-theme.git
+[submodule "powerlevel10k"]
+	path = powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k.git
+[submodule ".zsh-completions"]
+	path = .zsh-completions
+	url = https://github.com/zsh-users/zsh-completions.git
