@@ -25,5 +25,6 @@ else
     echo "Adding config to $ZSHRC"
     echo "$CONFIG_LINE" >> $ZSHRC
     exit 0
+    fi
 fi
 
