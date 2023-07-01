@@ -8,11 +8,10 @@ touch .jpducky
 # line to check if exists in zshrc
 CONFIG_LINE="for config ($HOME/.zsh/.zshrc) source $config"
 
-if [[ -f .jpducky ]]; then
-else
+if [[ ! -f .jpducky ]]; then
     if [[ -f "$ZSHRC" ]]; then
         if grep -Fxq "$CONFIG_LINE" "$ZSHRC"; then
-            break
+            exit 0
         else
             cp "$ZSHRC" $HOME/.zsh/.zshrc
             sed -i 's/^/#/' $ZSHRC
