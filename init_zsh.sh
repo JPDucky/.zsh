@@ -17,7 +17,6 @@ if [[ ! -f .jpducky ]]; then
             sed -i '1s/^/'"$CONFIG_LINE"'\n/' $ZSHRC
             exit 0
         fi
-    fi
 else
     echo "$ZSHRC does not exist. Do you have ZSH installed?"
     echo "Creating file..." 
