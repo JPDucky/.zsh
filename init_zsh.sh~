@@ -12,7 +12,7 @@ if [[ ! -f .jpducky ]]; then
     if [[ -f "$ZSHRC" ]]; and grep -Fxq "$CONFIG_LINE" "$ZSHRC"; then
             exit 0
         else
-            cp "$ZSHRC" $HOME/.zsh/.zshrc_old
+            cp "$ZSHRC" $HOME/.zsh/.zshrc
             sed -i 's/^/#/' $ZSHRC
             sed -i '1s/^/'"$CONFIG_LINE"'\n/' $ZSHRC
             exit 0
