@@ -19,3 +19,4 @@ alias listsesh="qdbus org.kde.ksmserver /KSMServer org.kde.KSMServerInterface.se
 alias saveseshas="qdbus org.kde.ksmserver /KSMServer org.kde.KSMServerInterface.saveCurrentSessionAs"
 
 alias vim="nvim"
+alias aider-update="pip uninstall aider-chat && pip install git+https://github.com/paul-gauthier/aider.git"
